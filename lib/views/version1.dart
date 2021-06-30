@@ -21,7 +21,7 @@ class _VersionViewState extends State<VersionView> {
             width: MediaQuery.of(context).size.width,
             child: Container(
               width: double.infinity,
-              margin: const EdgeInsets.symmetric(vertical: 70, horizontal: 40),
+              margin: const EdgeInsets.symmetric( horizontal: 40),
               alignment: Alignment.center,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -30,49 +30,49 @@ class _VersionViewState extends State<VersionView> {
                   // NOTE Logo 
                   // -----------------------------------------------------------------
                   Image(
-                    width: 415,
+                    width: 315,
                     image: AssetImage('asset/images/logo.png'),
                   ),
                   // -----------------------------------------------------------------
                   // NOTE Bouton
                   // -----------------------------------------------------------------
 
-                  ListView(
-                    children: <Widget>[
-                      ListTile(
-                        title: Text('Doliprane 1000mg'),
-                      ),
-                      ListTile(
-                        title: Text('ADVIL 200 mg'),
-                      ),
-                      ListTile(
-                        title: Text('MAXILASE sirop maux de gorge'),
-                      ),
-                    ],
-                  ),
-
-                  // OutlinedButton(
-                  //   style: OutlinedButton.styleFrom(
-                  //     minimumSize: Size(double.maxFinite, 50),
-                  //     side: BorderSide(
-                  //         color: Theme.of(context).primaryColor, width: 2),
-                  //   ),
-                  //   onPressed: () {},
-                  //   child: Text(
-                  //     'Doliprane 1000mg',
-                  //     style: TextStyle(
-                  //       fontFamily: 'Roboto',
-                  //       fontSize: 20,
-                  //       color: Theme.of(context).primaryColor,
+                  // ListView(
+                  //   children: <Widget>[
+                  //     ListTile(
+                  //       title: Text('Doliprane 1000mg'),
                   //     ),
-                  //   ),
+                  //     ListTile(
+                  //       title: Text('ADVIL 200 mg'),
+                  //     ),
+                  //     ListTile(
+                  //       title: Text('MAXILASE sirop maux de gorge'),
+                  //     ),
+                  //   ],
                   // ),
+
+                  OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      minimumSize: Size(double.maxFinite, 50),
+                      side: BorderSide(
+                          color: Theme.of(context).primaryColor, width: 2),
+                    ),
+                    onPressed: () {},
+                    child: Text(
+                      'Doliprane 1000mg',
+                      style: TextStyle(
+                        fontFamily: 'Roboto',
+                        fontSize: 20,
+                        color: Theme.of(context).primaryColor,
+                      ),
+                    ),
+                  ),
                   // -----------------------------------------------------------------
                   // NOTE Bouton
                   // -----------------------------------------------------------------
                   Padding(
                     padding: 
-                      const EdgeInsets.only(top: 20)),
+                      const EdgeInsets.only(top: 10, bottom:30)),
                   OutlinedButton(
                     style: OutlinedButton.styleFrom(
                       minimumSize: Size(120, 50),
@@ -89,12 +89,18 @@ class _VersionViewState extends State<VersionView> {
                       ),
                     ),
                   ),
+
+
+                  Image(
+                    width: 190,
+                    image: AssetImage('asset/images/doliprane.jpg'),
+                  ),
                   // -----------------------------------------------------------------
                   // NOTE Card
                   // -----------------------------------------------------------------
                     Padding(
                     padding: const EdgeInsets.only(
-                        top: 50, bottom: 10),
+                        top: 10, bottom: 10),
                     child: Text(
                       'Le nom du médicamment est : Doliprane 1000mg',
                       //textAlign: TextAlign.left,
@@ -109,7 +115,7 @@ class _VersionViewState extends State<VersionView> {
                     padding: const EdgeInsets.only(
                         top: 10, bottom: 10),
                     child: Text(
-                      'Le prix d\'achat net est : ',
+                      'Le prix d\'achat net est : 1.16€ pour 8 comprimés',
                       //textAlign: TextAlign.left,
                       style: TextStyle(
                         fontFamily: 'Roboto',
@@ -122,7 +128,7 @@ class _VersionViewState extends State<VersionView> {
                     padding: const EdgeInsets.only(
                         top: 10, bottom: 10),
                     child: Text(
-                      'Le prix de vente net est : ',
+                      'Le prix de vente net est : 5.80€                         ',
                       //textAlign: TextAlign.left,
                       style: TextStyle(
                         fontFamily: 'Roboto',
@@ -135,7 +141,7 @@ class _VersionViewState extends State<VersionView> {
                     padding: const EdgeInsets.only(
                         top: 10, bottom: 10),
                     child: Text(
-                      'Le coefficient multiplicateur est : ',
+                      'Le coefficient multiplicateur est : 5                      ',
                       //textAlign: TextAlign.left,
                       style: TextStyle(
                         fontFamily: 'Roboto',
@@ -148,7 +154,7 @@ class _VersionViewState extends State<VersionView> {
                     padding: const EdgeInsets.only(
                         top: 10, bottom: 10),
                     child: Text(
-                      'Le taux de remise est : ',
+                      'Le taux de remise est : 0.5                                ',
                       //textAlign: TextAlign.left,
                       style: TextStyle(
                         fontFamily: 'Roboto',
